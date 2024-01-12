@@ -4,10 +4,10 @@
 title = Kalkulator Adresów IPv4
 
 # (str) Package name
-package.name = kalkulatoripv4
+package.name = kalkulatorip
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = plspry.kalkulatoripv4
+package.domain = org.kalkulatorip
 # (str) Source code where the main.py live
 source.dir = .
 
@@ -46,7 +46,7 @@ requirements = python3==3.7.6,hostpython3==3.7.6,kivy==2.3.0,kivymd,pillow
 #presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
