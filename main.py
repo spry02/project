@@ -9,7 +9,7 @@ from kivymd.uix.button import MDFlatButton
 
 from kivy.config import Config
 from kivy.core.window import Window
-Config.set('graphics', 'resizable', '0')
+#Config.set('graphics', 'resizable', '0')
 
 KV='''
 <MenuHeader>
@@ -125,7 +125,7 @@ MDScreen:
 class MenuHeader(MDBoxLayout):
     ''''''
 
-Window.size=(450,800)
+#Window.size=(450,800)
 
 class MyApp(MDApp):
     icon=''
