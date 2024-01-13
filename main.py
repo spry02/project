@@ -8,8 +8,12 @@ from kivymd.uix.dialog import MDDialog
 from kivymd.uix.button import MDFlatButton
 
 from kivy.config import Config
-from kivy.core.window import Window
-#Config.set('graphics', 'resizable', '0')
+# from kivy.core.window import Window
+
+Config.set('graphics', 'resizable', 0)
+Config.set('graphics', 'width', 500)
+Config.set('graphics', 'height', 800)
+# Config.write()
 
 KV='''
 <MenuHeader>
@@ -75,7 +79,8 @@ MDScreen:
         id: call
         icon: 'heart'
         text: "Przeliczanie"
-        pos_hint: {'center_x': 0.2,'center_y': 0.72}
+        pos_hint: {'center_x': 0.25,'center_y': 0.72}
+        size_hint: .4, None
         on_release: app.buton()
         # on_release: app.menu.open()
     MDFlatButton:
@@ -84,6 +89,13 @@ MDScreen:
         value: 24
         pos_hint: {'center_x': 0.5, "center_y": 0.8}
         on_release: app.menu.open()
+    MDLabel:
+        id: footer
+        text: '© All rights reserved @ plspry 2024'
+        pos_hint: {'center_x': 0.6,'center_y': 0.03}
+        size_hint: .8, .01
+        theme_text_color: "Custom"
+        text_color: (75, 75, 75, 1)
     MDLabel:
         id: wynik
         text: ''
@@ -125,7 +137,7 @@ MDScreen:
 class MenuHeader(MDBoxLayout):
     ''''''
 
-#Window.size=(450,800)
+# Window.size=(450,800)
 
 class MyApp(MDApp):
     icon=''
@@ -167,7 +179,7 @@ class MyApp(MDApp):
             )
     def build(self):
         self.title='Kalkulator IP by plspry'
-        self.icon="network.256x2502.ico"
+        self.icon="icon.ico"
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "Red"
         screen=Screen()
