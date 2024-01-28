@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Kalkulator Adresów IPv4
+title = Konwerter systemów liczbowych
 
 # (str) Package name
-package.name = kalkulatorip
+package.name = konwertersys
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.kalkulatorip
+package.domain = org.konwertersys
 # (str) Source code where the main.py live
 source.dir = .
 
