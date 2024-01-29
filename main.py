@@ -129,7 +129,6 @@ class MyApp(MDApp):
             )
     def build(self):
         self.title='Konwerter liczb by plspry'
-        self.icon="icon.ico"
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "Red"
         screen=Screen()
