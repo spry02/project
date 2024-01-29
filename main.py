@@ -11,7 +11,6 @@ from kivy.config import Config
 Config.set('graphics', 'resizable', 0)
 Config.set('graphics', 'width', 500)
 Config.set('graphics', 'height', 800)
-Config.set('kivy','window_icon','C:/Users/lysyf/Desktop/apka3/icon.ico')
 Config.write()
 
 KV='''
@@ -76,12 +75,10 @@ class MenuHeader(MDBoxLayout):
 
 
 class MyApp(MDApp):
-    icon='ikona.png'
     dialog = None
     def __init__(self):
         super().__init__()
         self.kvs = Builder.load_string(KV)
-        self.icon='ikona.png'
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "Red"
         # menu
